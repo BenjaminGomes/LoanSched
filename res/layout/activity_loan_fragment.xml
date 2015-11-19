@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bgomes.Loansched.LoanSchedActivity" >
+
+    <Button
+        android:id="@+id/rateDownButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rateTextView"
+        android:layout_alignBottom="@+id/rateTextView"
+        android:layout_toLeftOf="@+id/rateUpButton"
+        android:text="@string/downButton" />
+
+    <EditText
+        android:id="@+id/termEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/termLabelTextView"
+        android:layout_alignBottom="@+id/termLabelTextView"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/term" />
+
+    <TextView
+        android:id="@+id/prinLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/termEditText"
+        android:text="@string/prinLabel" />
+
+    <EditText
+        android:id="@+id/prinEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prinLabelTextView"
+        android:layout_toRightOf="@+id/rateLabelTextView"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/prin" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/rateLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prinLabelTextView"
+        android:layout_below="@+id/prinLabelTextView"
+        android:layout_marginTop="40dp"
+        android:text="@string/rateLabel" />
+
+    <TextView
+        android:id="@+id/rateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rateLabelTextView"
+        android:layout_alignBottom="@+id/rateLabelTextView"
+        android:layout_alignLeft="@+id/termEditText"
+        android:layout_marginLeft="25dp"
+        android:text="@string/rate" />
+
+    <TextView
+        android:id="@+id/termLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mopmtTextView"
+        android:layout_alignLeft="@+id/rateLabelTextView"
+        android:layout_marginBottom="26dp"
+        android:text="@string/termLabel" />
+
+    <TextView
+        android:id="@+id/mopmtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mopmtLabelTextView"
+        android:layout_alignBottom="@+id/mopmtLabelTextView"
+        android:layout_alignRight="@+id/termEditText"
+        android:text="@string/mopmt" />
+
+    <Button
+        android:id="@+id/rateUpButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rateDownButton"
+        android:layout_alignBottom="@+id/rateDownButton"
+        android:layout_alignRight="@+id/termEditText"
+        android:text="@string/upButton" />
+
+    <TextView
+        android:id="@+id/mopmtLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/termLabelTextView"
+        android:layout_below="@+id/rateDownButton"
+        android:layout_marginTop="90dp"
+        android:text="@string/mopmtLabel" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedButtonTitle"
+        android:id="@+id/schedButton"
+        android:layout_below="@+id/mopmtLabelTextView"
+        android:layout_toEndOf="@+id/prinLabelTextView"
+        android:layout_marginTop="51dp" />
+
+</RelativeLayout>

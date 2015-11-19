@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/headerTableEin">
+        <TableRow
+            android:id="@+id/tableTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:gravity="center"
+                android:text="Loan Schedule"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewMonth"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Month"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBBal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Beg.Bal."
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textIntChg"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Int.Chg."
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEBal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="End.Bal."
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/headerTableEin">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loanTable">
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

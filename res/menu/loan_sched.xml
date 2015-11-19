@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bgomes.loansched.LoanSchedActivity" >
+    
+    <item
+        android:id="@+id/return_main"
+        android:orderInCategory="100"
+        android:title="@string/menu_returnTitle"
+        android:showAsAction="never"/>
+</menu>
